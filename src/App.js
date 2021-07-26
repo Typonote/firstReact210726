@@ -1,23 +1,45 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+// JSX언어
+function HeaderTag(){
+    return (
+         <header>
+            <h1><a href="index.html">WEB</a></h1>
+        </header>
+    );
+}
+
+function NavTag(){
+    return (
+        <nav>
+            <ol>
+                <li><a href="1.html">html</a></li>
+                <li><a href="2.html">css</a></li>
+                <li><a href="3.html">js</a></li>
+                <li><a href="100000001.html">react</a></li>
+            </ol>
+        </nav>
+    );
+}
+
+function ArticleTag(){
+    return (
+        <article>
+        <h2>welcome</h2>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis deserunt, dolore aut pariatur repellat assumenda fugiat in laborum excepturi? Quo velit harum consequatur nostrum vitae quas deserunt, ratione iusto veritatis.
+        </article>
+    );
+}
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <HeaderTag />
+    <NavTag />
+    <ArticleTag />
     </div>
   );
 }
